@@ -2,16 +2,32 @@
   position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   padding: 1rem;
   z-index: 1000;
 
-  .logo {
-    color: white;
-  }
   .icon-dots {
     color: white;
+  }
+  .logo {
+    align-items: center;
+    justify-content: center;
+
+    .icon {
+      color: var(--PrimaryColor);
+      font-size: 35px;
+      transform: translateX(-10px);
+    }
+  }
+  :root {
+    --PrimaryColor: #d20442;
+    --PrimaryColorHover: #ac0436;
+    --SecondaryColor: #e1e1e1;
+    --ThirdColor: #8a8a8a;
+    --FourthColor: #0000;
+    --GradientColor: linear-gradient(to right, #bdc3c7, #2c3e50);
+    --BodyColor: rgb(198, 204, 209);
   }
   @media screen and (max-width: 768px) {
     .navBar {
@@ -20,12 +36,16 @@
       height: max-content;
       width: 80%;
       border-radius: 1rem;
-      top: 6rem;
+      top: -100rem;
       left: 50%;
       transform: translate(-50%);
       z-index: 2000;
       box-shadow: 0 2px 4px rgba(2, 15, 29, 0.8);
       transition: all 0.3s ease-in-out;
+      padding: 1rem;
+    }
+    .active {
+      top: 7rem;
     }
     .navLists {
       display: flex;
@@ -34,6 +54,42 @@
       width: 100%;
       margin: 0 auto;
       padding: 0.5rem 0;
+    }
+    .navItem {
+      padding: 0.3rem;
+
+      .navList {
+        color: rgb(95, 95, 95);
+        font-size: 1.5rem;
+
+        &:hover {
+          color: rgb(34, 34, 34);
+        }
+      }
+    }
+
+    .btn a {
+      font-weight: 600;
+    }
+    .closeNavBar {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: var(--PrimaryColor);
+      &:hover {
+        color: var(--PrimaryColorHover);
+      }
+    }
+  }
+
+  .togglerNavBar {
+    .icon-dots {
+      font-size: 50px;
+      color: var(--PrimaryColor);
+      cursor: pointer;
+      &:hover {
+        color: var(--PrimaryColorHover);
+      }
     }
   }
 }

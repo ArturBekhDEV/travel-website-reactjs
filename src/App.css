@@ -1,12 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.logo {
+  color: white;
   font-family: "Alkalami";
 }
-
 :root {
   --PrimaryColor: #d20442;
   --SecondaryColor: #e1e1e1;
@@ -14,10 +21,14 @@
   --FourthColor: #0000;
   --GradientColor: linear-gradient(to right, #bdc3c7, #2c3e50);
   --BodyColor: rgb(198, 204, 209);
+  --PrimaryColorHover: #ac0436;
 }
 a {
   text-decoration: none;
-  /* color: rgb(253, 3, 3); */
+  color: white;
+}
+a:hover {
+  color: white;
 }
 
 li {
@@ -47,19 +58,23 @@ li {
 }
 
 .btn {
+  margin-top: 1rem;
   background: none;
-  border-radius: 0.4rem;
   border: none;
   outline: none;
   cursor: pointer;
   font-size: 1rem;
+  padding: 0.7rem;
+  transition: all 0.2s ease-in-out;
+  background: var(--PrimaryColor);
+  color: white;
 }
 .btn a {
   color: white;
+  font-size: 1.5rem;
 }
-
 .btn:hover {
-  background: var(--PrimaryColor);
+  background-color: #a80234;
 }
 img,
 video {
@@ -73,4 +88,5 @@ input {
 body {
   background: var(--BodyColor);
   font-size: 2rem;
+  font-family: "Poppins", sans-serif;
 }
