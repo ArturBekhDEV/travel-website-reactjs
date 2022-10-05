@@ -1,43 +1,72 @@
+import HeroSlider, { Overlay, Slide, MenuNav } from "hero-slider";
 import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-// import "bootstrap/dist/css/bootstrap.min.css";
-import img1 from "../../img/1.jpg";
-import img2 from "../../img/2.jpg";
-import img3 from "../../img/3.jpg";
-import img4 from "../../img/4.jpg";
-import img5 from "../../img/5.jpg";
-import img6 from "../../img/6.jpg";
-import img7 from "../../img/7.jpg";
+import "./Carousel.css";
+import Wrapper from "./components/Wrapper";
+import Title from "./components/Title";
+import Subtitle from "./components/Subtitle";
 
-const ControlledCarousel = () => {
+import faroe from "../../img/faroe.jpg";
+import iceland from "../../img/iceland.jpg";
+import finland from "../../img/finland.jpg";
+
+export default function BasicSlider() {
   return (
-    <>
-      <Carousel>
-        <Carousel.Item>
-          <img className="d-block w-100" src={img1} alt="First slide" />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={img2} alt="Second slide" />
+    <HeroSlider
+      height={"100vh"}
+      width={"100%"}
+      autoplay
+      controller={{
+        initialSlide: 1,
+        slidingDuration: 500,
+        slidingDelay: 100,
+        onSliding: (nextSlide) =>
+          console.debug("onSliding(nextSlide): ", nextSlide),
+        onBeforeSliding: (previousSlide, nextSlide) =>
+          console.debug(
+            "onBeforeSliding(previousSlide, nextSlide): ",
+            previousSlide,
+            nextSlide
+          ),
+        onAfterSliding: (nextSlide) =>
+          console.debug("onAfterSliding(nextSlide): ", nextSlide),
+      }}
+      animations={{
+        slidingAnimation: "fade",
+      }}
+    >
+      <Overlay>
+        <Wrapper>
+          <Title>
+            Search your favorite <br /> place.
+          </Title>
+          <Subtitle>Check out the best nordic tour here.</Subtitle>
+        </Wrapper>
+      </Overlay>
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={img3} />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-    </>
+      <Slide
+        className="test_slide"
+        label="Faroe Island's - choose your destination"
+        background={{
+          backgroundImageSrc: faroe,
+        }}
+      />
+
+      <Slide
+        label="Iceland - choose your destination"
+        background={{
+          backgroundImageSrc: iceland,
+        }}
+      />
+
+      <Slide
+        // shouldRenderMask
+        label="Finland - choose your destination"
+        background={{
+          backgroundImageSrc: finland,
+        }}
+      />
+
+      <MenuNav />
+    </HeroSlider>
   );
-};
-
-export default ControlledCarousel;
+}

@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 2rem;
   z-index: 1000;
 }
 .header .icon-dots {
@@ -15,8 +15,9 @@
   justify-content: center;
 }
 .header .logo .icon {
+  padding-top: 5px;
   color: var(--PrimaryColor);
-  font-size: 35px;
+  font-size: 32px;
   transform: translateX(-10px);
 }
 .header :root {

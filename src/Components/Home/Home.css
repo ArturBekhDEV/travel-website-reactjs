@@ -8,45 +8,22 @@
   --BodyColor: rgb(198, 204, 209);
 }
 
+.carousel-main {
+  position: relative;
+}
+
 .home {
   width: 100%;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  bottom: 500px;
+  right: 400px;
+  z-index: 1000;
+  color: var(--PrimaryColor);
+  margin: 0 auto;
 }
-.home .overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgb(47, 106, 127);
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  mix-blend-mode: hard-light;
-}
-.home .img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.home .homeContent {
-  width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  padding: 8rem 1.5rem 3rem;
-  display: flex;
-  row-gap: 3rem;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  color: white;
-  margin: auto;
-  z-index: 100;
+.home h1 {
+  font-weight: 900;
 }/*# sourceMappingURL=Home.css.map */

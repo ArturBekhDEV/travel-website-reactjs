@@ -1,0 +1,19 @@
+.Container {
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: left;
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: var(--PrimaryColor);
+}
+:root {
+  --PrimaryColor: #d20442;
+  --SecondaryColor: #e1e1e1;
+  --ThirdColor: #8a8a8a;
+  --FourthColor: #0000;
+  --GradientColor: linear-gradient(to right, #bdc3c7, #2c3e50);
+  --BodyColor: rgb(198, 204, 209);
+  --PrimaryColorHover: #ac0436;
+}

@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alkalami&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+.hero-slider-root {
+  display: flex;
+}
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .logo {

@@ -22,7 +22,7 @@ const Navbar = () => {
             <h1>
               {" "}
               <GiFishing className="icon" />
-              Fishing.
+              Trevel North.
             </h1>
           </Link>
         </div>

@@ -7,44 +7,23 @@
   --GradientColor: linear-gradient(to right, #bdc3c7, #2c3e50);
   --BodyColor: rgb(198, 204, 209);
 }
-
+.carousel-main {
+  position: relative;
+}
 .home {
   width: 100%;
-  position: relative;
+  // position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  bottom: 500px;
+  right: 400px;
+  z-index: 1000;
+  color: var(--PrimaryColor);
+  margin: 0 auto;
 
-  .overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgb(47, 106, 127);
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    mix-blend-mode: hard-light;
-  }
-  .img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    object-fit: cover;
-  }
-  .homeContent {
-    width: 100%;
-    height: max-content;
-    padding: 8rem 1.5rem 3rem;
-    display: flex;
-    row-gap: 3rem;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: center;
-    color: white;
-    margin: auto;
-    z-index: 100;
+  h1 {
+    font-weight: 900;
   }
 }
