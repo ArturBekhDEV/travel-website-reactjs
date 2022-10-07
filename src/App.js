@@ -10,6 +10,7 @@ const App = () => {
     <>
       <NavBar />
       <Home />
+      <Main />
     </>
   );
 };
