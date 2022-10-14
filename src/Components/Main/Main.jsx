@@ -19,60 +19,56 @@ const data = [
     fees: "$1259",
     desception: "Southern Norway, or Sørlandet as it is called in Norwegian.",
   },
-  // {
-  //   id: 1,
-  //   imgSrc: img,
-  //   destTitle: "The March of the Norwegians",
-  //   location: "Norway",
-  //   grade: "Cultural Relax",
-  //   desception:
-  //     "Southern Norway, or Sørlandet as it is called in Norwegian, is Norway’s most popular summer destination among Norwegians. Every year they descend in great number to the southernmost part of Norway, but the outside world is completely oblivious to this. Have a peek at Norway’s best-kept secret.",
-  // },
-  // {
-  //   id: 2,
-  //   imgSrc: img,
-  //   destTitle: "The March of the Norwegians",
-  //   location: "Norway",
-  //   grade: "Cultural Relax",
-  //   desception:
-  //     "Southern Norway, or Sørlandet as it is called in Norwegian, is Norway’s most popular summer destination among Norwegians. Every year they descend in great number to the southernmost part of Norway, but the outside world is completely oblivious to this. Have a peek at Norway’s best-kept secret.",
-  // },
-  // {
-  //   id: 3,
-  //   imgSrc: img,
-  //   destTitle: "The March of the Norwegians",
-  //   location: "Norway",
-  //   grade: "Cultural Relax",
-  //   desception:
-  //     "Southern Norway, or Sørlandet as it is called in Norwegian, is Norway’s most popular summer destination among Norwegians. Every year they descend in great number to the southernmost part of Norway, but the outside world is completely oblivious to this. Have a peek at Norway’s best-kept secret.",
-  // },
-  // {
-  //   id: 4,
-  //   imgSrc: img,
-  //   destTitle: "The March of the Norwegians",
-  //   location: "Norway",
-  //   grade: "Cultural Relax",
-  //   desception:
-  //     "Southern Norway, or Sørlandet as it is called in Norwegian, is Norway’s most popular summer destination among Norwegians. Every year they descend in great number to the southernmost part of Norway, but the outside world is completely oblivious to this. Have a peek at Norway’s best-kept secret.",
-  // },
-  // {
-  //   id: 5,
-  //   imgSrc: img,
-  //   destTitle: "The March of the Norwegians",
-  //   location: "Norway",
-  //   grade: "Cultural Relax",
-  //   desception:
-  //     "Southern Norway, or Sørlandet as it is called in Norwegian, is Norway’s most popular summer destination among Norwegians. Every year they descend in great number to the southernmost part of Norway, but the outside world is completely oblivious to this. Have a peek at Norway’s best-kept secret.",
-  // },
-  // {
-  //   id: 6,
-  //   imgSrc: img,
-  //   destTitle: "The March of the Norwegians",
-  //   location: "Norway",
-  //   grade: "Cultural Relax",
-  //   desception:
-  //     "Southern Norway, or Sørlandet as it is called in Norwegian, is Norway’s most popular summer destination among Norwegians. Every year they descend in great number to the southernmost part of Norway, but the outside world is completely oblivious to this. Have a peek at Norway’s best-kept secret.",
-  // },
+  {
+    id: 2,
+    imgSrc: img2,
+    destTitle: "Absolute North",
+    location: "Denmark",
+    grade: "Cultural Relax",
+    fees: "1705$",
+    desception:
+      "We enjoyed the tour, overall. We considered it a taste of Scandinavia. There wasn't..",
+  },
+  {
+    id: 3,
+    imgSrc: img3,
+    destTitle: "Land of the Northern Lights - 5 days",
+    location: "Reykjavik",
+    grade: "Cultural Relax",
+    fees: "845$",
+    desception:
+      "The real down side was the weather; we were unable to view the lights. Erin was absolutely...",
+  },
+  {
+    id: 4,
+    imgSrc: img4,
+    destTitle: "6 Day - Around Iceland Adventure",
+    location: "Iceland",
+    grade: "Cultural Relax",
+    fees: "1705$",
+    desception:
+      "The waterfalls were epic, the people were epic, the food was epic and, Hodei, our...",
+  },
+  {
+    id: 5,
+    imgSrc: img5,
+    destTitle: "Nordic Capitals: Copenhagen, Oslo, Helsinki & Stockholm",
+    location: "Finland",
+    grade: "Cultural Relax",
+    fees: "4500$",
+    desception:
+      "Larae was so knowledgeable about all three countries and was always upbeat and treated...",
+  },
+  {
+    id: 6,
+    imgSrc: img6,
+    destTitle: "Highlights of Scandinavia - Fishing ",
+    location: "Sweden",
+    grade: "Cultural Relax",
+    fees: "2138$",
+    desception:
+      "It was fun! Did some stuff outside of my comfort zone and saw a bunch of beautiful...",
+  },
 ];
 
 const Main = () => {
@@ -86,7 +82,7 @@ const Main = () => {
         {data.map((data) => {
           return (
             <div key={data.id} className="singleDestination">
-              <div className="imageDive">
+              <div className="imageDiv">
                 <img src={data.imgSrc} alt={data.destTitle} />
               </div>
               <div className="cardInfo">

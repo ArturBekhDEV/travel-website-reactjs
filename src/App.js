@@ -11,6 +11,7 @@ const App = () => {
       <NavBar />
       <Home />
       <Main />
+      <Footer />
     </>
   );
 };

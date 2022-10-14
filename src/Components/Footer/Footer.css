@@ -1,1 +1,91 @@
-/*# sourceMappingURL=Footer.css.map */
+:root {
+  --PrimaryColor: #d20442;
+  --SecondaryColor: #e1e1e1;
+  --ThirdColor: #8a8a8a;
+  --FourthColor: #0000;
+  --GradientColor: linear-gradient(to right, #bdc3c7, #2c3e50);
+  --BodyColor: rgb(198, 204, 209);
+  --PrimaryColorHover: #ac0436;
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.footer .videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.footer .videoDiv video {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.footer .videoDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.footer .secContent {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2rem initial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  row-gap: 2rem;
+  z-index: 100;
+}
+.footer .secContent .contactDiv {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer .secContent .contactDiv .text small {
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+}
+.footer .secContent .contactDiv .text h2 {
+  color: white;
+  font-size: 1.8rem;
+}
+.footer .secContent .contactDiv .inputDiv {
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer .secContent .contactDiv .inputDiv input {
+  width: 100%;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 1rem;
+}
+.footer .secContent .contactDiv .inputDiv input::-moz-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+.footer .secContent .contactDiv .inputDiv input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+.footer .secContent .contactDiv .inputDiv input::placeholder {
+  color: white;
+  opacity: 0.7;
+}/*# sourceMappingURL=Footer.css.map */

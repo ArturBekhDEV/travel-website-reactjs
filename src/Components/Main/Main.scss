@@ -27,7 +27,7 @@
         height: 5px;
         width: 120px;
         right: 0;
-        bottom: 5px;
+        bottom: -5px;
         z-index: -1;
       }
     }
@@ -46,9 +46,78 @@
       background-color: var(--greyColor);
       box-shadow: 0 2px 12px rgb(140, 140, 141, 0.5);
       overflow: hidden;
-    }
-    .btn {
-      border-radius: 18px;
+
+      &:hover {
+        box-shadow: 1 4px 4px rgba(85, 140, 141, 0.549);
+        transition: 0.5s ease-in-out;
+        background-color: #adc0d3;
+      }
+      .imageDiv {
+        height: 180px;
+        overflow: hidden;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          transition: 2s ease;
+          &:hover {
+            img {
+              transform: scale(1.15);
+            }
+          }
+        }
+      }
+      .cardInfo {
+        padding: 1rem;
+
+        .destTitle {
+          color: black;
+          font-size: 2rem;
+        }
+        .content {
+          gap: 0.5rem;
+          .icon {
+            font-size: 18px;
+          }
+          .name {
+            font-size: 14px;
+          }
+        }
+        .fees {
+          width: 100%;
+          justify-content: space-between;
+          padding: 1rem;
+          margin: 1rem 0;
+          border-top: 1.5px solid;
+          border-bottom: 1.5px solid;
+
+          .grade {
+            max-width: 100px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+        .price {
+          font-size: 2rem;
+          color: black;
+        }
+      }
+      .desc {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .btn {
+        margin-top: 1rem;
+        border-radius: 10px;
+
+        .icon {
+          align-self: center;
+          font-size: 22px;
+        }
+      }
     }
   }
 }
